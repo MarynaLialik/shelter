@@ -1,0 +1,27 @@
+.about__wrapper {
+    display: flex;
+    padding: 80px 175px;
+    min-height: 588px;
+  //  background: $color-light-xl;
+  }
+
+.aboutImageDog {
+    width: 50%; 
+}
+.aboutShelter{
+    width: 50%;
+}  
+
+.aboutShelterContent {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 0;  
+    gap: 25px;
+}
+
+.aboutShelterHeading {
+    color: $color-dark-l;
+    width: 370px;
+    height: 90px;
+
+}

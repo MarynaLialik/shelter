@@ -1,0 +1,21 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "Shelter task",
+  "main": "index.js",
+  "scripts": {
+   
+    "style": "sass --watch pages/main/sass/style.scss pages/main/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarynaLialik/shelter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarynaLialik/shelter/issues"
+  },
+  "homepage": "https://github.com/MarynaLialik/shelter#readme"
+}

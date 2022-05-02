@@ -1,0 +1,58 @@
+@import "base/normalize";
+@import "abstract/constants";
+
+@import "base/base";
+@import "base/logo";
+@import "base/buttons";
+@import "layouts/wrapper";
+
+@import "components/startScreen";
+@import "components/navigation";
+@import "components/donation";
+@import "components/pets";
+@import "components/help";
+@import "components/about";
+@import "components/footer";
+
+
+@font-face {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Georgia"),
+         url('../../assets/fonts/Georgia/georgia-regular.ttf') format('ttf');          
+  }
+
+  @font-face {
+    font-family: 'Arial';
+    src: url('../../../assets/fonts/Arial_font/Arial-ItalicMT.woff2') format('woff2'),
+        url('../../../assets/fonts/Arial_font/Arial-ItalicMT.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Arial';
+    src: url('../../../assets/fonts/Arial_font/ArialMT.woff2') format('woff2'),
+        url('../../../assets/fonts/Arial_font/ArialMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/*
+@font-face {
+   font-family: 'Arial';
+   src: url('../../../assets/fonts/Arial/arial-regular.ttf') format('ttf');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../../../assets/fonts/Arial/arial-italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}*/
+

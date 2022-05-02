@@ -1,0 +1,33 @@
+.navigation {
+    display: flex;
+}
+
+.navigation__link {
+    list-style: none;
+    margin-left: 35px;
+    font-family: Arial;
+    font-size: 1.5rem;
+    color: $color-dark-s;
+ //   font-weight: 400;
+    line-height: 2.4rem;
+ //   letter-spacing: 0px;
+ //   text-align: left;
+
+}
+.navigation__link a{
+    color: $color-dark-s;
+    text-decoration: none;
+
+}
+
+.navigation__link a:active{
+   // text-decoration-line: underline;
+    text-decoration-color: $color-primary;
+    
+}
+
+.navigation__link:first-child {
+    margin-left: 0px;
+    border-bottom: 2px;
+    border-bottom: $color-primary solid 3px;
+}

@@ -1,0 +1,29 @@
+.help {
+    background: $color-light-xl;
+    padding: 80px 0 45px 0;
+
+}
+
+.helpHeading {
+    text-align: center;
+    color: $color-dark-l;
+}
+
+.helpItem {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.helpItemIcon {
+    margin: 0 60px 0 60px;
+
+}
+
+.helpItemIconTitle {
+    
+    color: $color-dark-l;
+    margin: 22px 0 55px 0;
+}     

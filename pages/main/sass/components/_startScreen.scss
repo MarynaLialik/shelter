@@ -1,0 +1,38 @@
+.startScreen {
+    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  //  background-image: url('..\..\..\..\assets\images\start-screen-gradient-background.svg');
+    padding: 55px 0 0 0;
+    color: $color-light-xl;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 60px 0;
+}
+
+.startScreenMain {
+    display: flex;
+}
+
+.startScreenContent {
+    margin-top: 165px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    color: $color-light-xl;
+    padding: 0 100px 42px 0;
+}
+
+.subheading {
+    color: $color-dark-s;
+    padding-bottom: 42px;
+}
+
+.startScreenImage {
+    margin-left: 42px;
+    margin-top: -10px 0 0 20px;
+}
