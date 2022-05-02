@@ -506,7 +506,7 @@ color.
 }
 
 .background-cell {
-  background-image: url("../../../assets/images/noise_transparent.png");
+  background-image: url("../../../assets/images/noise_transparent_final_2.png");
   padding: 55px 0 0 0;
 }
 
@@ -560,6 +560,17 @@ color.
   text-decoration: none;
 }
 
+.active a {
+  color: #FFFFFF;
+  border-bottom: 3px solid #F1CDB3;
+  padding-bottom: 4px;
+}
+
+.navigation__link a:hover {
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+
 .navigation__link:first-child {
   margin-left: 0px;
   border-bottom: 0px;
@@ -592,8 +603,14 @@ color.
   cursor: pointer;
 }
 
+creditCard a {
+  text-decoration: none;
+}
+
 .creditCard h4 {
   margin: 0px;
+  text-decoration: none;
+  color: #545454;
 }
 
 .creditCardContent {
@@ -734,7 +751,7 @@ color.
 }
 
 .background-footer-cell {
-  background-image: url("../../../assets/images/noise_transparent.png");
+  background-image: url("../../../assets/images/noise_transparent_final_2.png");
 }
 
 .layout-3-column {

@@ -15,8 +15,16 @@
     text-decoration: none;
 }
 
-.navigation__link a:active{
-  //  text-decoration-color: $color-primary;  
+.active a {
+    color: $color-light-xl;
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 4px;
+}
+
+.navigation__link a:hover{
+  //  text-decoration-color: $color-primary;
+    color: $color-light-xl;  
+    transition: all .3s;
 }
 
 .navigation__link:first-child {
