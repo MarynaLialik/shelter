@@ -29,7 +29,15 @@
     border-radius: 9px;
     background-color: $color-light-s;
     text-align: center;
+    cursor: pointer;
 }
+
+.card:hover {
+    background-color: $color-light-xl;
+    .cardButton__wrapper {
+        background: $color-primary;
+    }
+}    
 
 .pets-card-title {
 

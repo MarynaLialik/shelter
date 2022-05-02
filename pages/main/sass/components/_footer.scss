@@ -1,6 +1,11 @@
 .footer {
     background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
+
+.background-footer-cell {
+    background-image: url('../../../assets/images/noise_transparent.png');
+}
+
 .layout-3-column{
     display: flex;
     gap: 150px;
@@ -15,6 +20,10 @@
     display: flex;
     color: $color-primary;
     margin-top: 40px;
+}
+
+.contacts-link {
+    text-decoration: none;
 }
 
 .pin {

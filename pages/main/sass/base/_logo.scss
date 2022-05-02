@@ -7,13 +7,20 @@
 
     font-family: Georgia;
     font-size: 3.2rem;
-    color: $color-primary;
- //font-weight: 400;
+    font-weight: 400;
     line-height: 110%;     /* or 35px */
     letter-spacing: 0.06em;
     padding-bottom: 10px;
     margin: 0;
-   // text-align: left;
+    cursor: pointer;
+    color: $color-primary;
+    text-decoration: none;
+ //color: $color-dark-s;
+    
+}
+.logo-title a{
+    text-decoration: none;
+    color: $color-primary;
 }
 
 .logo-subtitle {
@@ -21,6 +28,15 @@
    // font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
-  // text-align: left;
-   text-align: center;
+    text-align: center;
+}
+
+.logo-subtitle a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.make-friends {
+    text-decoration: none;
+    color: $color-dark-3xl;
 }
