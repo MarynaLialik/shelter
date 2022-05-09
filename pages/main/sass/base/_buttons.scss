@@ -55,6 +55,7 @@
 
 .button-circle:hover {
     background: $color-primary-light;
+    border: 2px solid $color-primary-light;
 }
 
 .button-arrow-right img {
@@ -64,6 +65,7 @@
 }
 .button-arrow-right:hover {
     background: $color-primary-light;
+    border: 2px solid $color-primary-light;
 }
 
 .disabled {
