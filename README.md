@@ -1,3 +1,6 @@
 # shelter
-Shelter task
-https://marynalialik.github.io/shelter/pages/main/ 
+Shelter task <br /> 
+1 week: <br /> 
+https://marynalialik.github.io/shelter/pages/main/ <br /> 
+2 week: <br /> 
+https://marynalialik.github.io/shelter/pages/pets/pets.html <br /> 
