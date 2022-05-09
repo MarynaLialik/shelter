@@ -10,25 +10,40 @@
     color: $color-dark-s;
     line-height: 2.4rem;
 }
-.navigation__link a{
+
+.navigation-main {
     color: $color-dark-s;
     text-decoration: none;
 }
 
-.active a {
+.navigation-pets {
+    color: $color-dark-l; // #545454;
+    text-decoration: none;
+}
+
+.active-main {
     color: $color-light-xl;
     border-bottom: 3px solid #F1CDB3;
     padding-bottom: 4px;
 }
 
-.navigation__link a:hover{
-  //  text-decoration-color: $color-primary;
-    color: $color-light-xl;  
+.active-pets {
+    color: $color-dark-3xl; //#292929
+    border-bottom: 3px solid #F1CDB3;
+    padding-bottom: 4px;
+}
+
+.navigation-main:hover{
+    color: $color-light-s;  
+    transition: all .3s;
+}
+
+.navigation-pets:hover{
+    color: $color-dark-3xl; //#292929  
     transition: all .3s;
 }
 
 .navigation__link:first-child {
     margin-left: 0px;
     border-bottom: 0px;
-    border-bottom: $color-primary solid 3px;
 }

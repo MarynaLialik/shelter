@@ -30,21 +30,16 @@
     background-color: $color-light-s;
     text-align: center;
     cursor: pointer;
-}
+}  
 
 .card:hover {
     background-color: $color-light-xl;
     .cardButton__wrapper {
         background: $color-primary;
     }
-}    
+} 
 
 .pets-card-title {
-
-    font-family: Georgia;
-    letter-spacing: 0.06em;
-    font-size: 20px;
-    line-height: 23px;
     text-align: center;
     color: $color-dark-l;
     margin: 22px 0 30px 0;

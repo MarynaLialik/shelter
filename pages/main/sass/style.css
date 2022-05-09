@@ -343,6 +343,7 @@ template {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -397,13 +398,21 @@ p {
 }
 
 .paragraph-l {
-  /* or 24px */
   color: #4C4C4C;
+}
+
+a {
+  text-decoration: none;
+}
+
+.background-main {
+  background: url(../../../assets/images/noise_transparent_final_2.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .logo {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .logo-title {
@@ -415,14 +424,8 @@ p {
   letter-spacing: 0.06em;
   padding-bottom: 10px;
   margin: 0;
-  cursor: pointer;
   color: #F1CDB3;
   text-decoration: none;
-}
-
-.logo-title a {
-  text-decoration: none;
-  color: #F1CDB3;
 }
 
 .logo-subtitle {
@@ -432,12 +435,22 @@ p {
   text-align: center;
 }
 
-.logo-subtitle a {
+.logo-title-main {
   text-decoration: none;
-  color: #fff;
+  color: #F1CDB3;
 }
 
-.make-friends {
+.logo-subtitle-main {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.logo-title-pets {
+  text-decoration: none;
+  color: #545454;
+}
+
+.logo-subtitle-pets {
   text-decoration: none;
   color: #292929;
 }
@@ -446,7 +459,7 @@ p {
   padding: 12px 42px;
   height: 52px;
   border-radius: 100px;
-  border: 3px solid #F1CDB3;
+  border: 2px solid #F1CDB3;
   font-family: Georgia;
   font-size: 1.7rem;
   line-height: 130%;
@@ -457,34 +470,48 @@ p {
   transition: all 0.3s;
 }
 
-.button-colored {
-  background: #F1CDB3;
-}
-
 .button:hover {
   background: #FDDCC4;
 }
 
-/*
-cursor: pointer,
-background,
-text-decoration: underline,
-color.
+.make-friends {
+  color: #292929;
+}
 
-/* color-primary*/
-.button-arrow {
+.button-colored {
+  background: #F1CDB3;
+}
+
+.button-circle {
+  font-family: Georgia;
+  font-size: 2rem;
   height: 52px;
   width: 52px;
   border-radius: 100px;
-  border: 3px solid #F1CDB3;
+  border: 2px solid #F1CDB3;
+  background: transparent;
   color: #292929;
   transition: all 0.3s;
-  vertical-align: middle;
+  cursor: pointer;
+}
+
+.button-light-s {
   background-color: #FAFAFA;
 }
 
-.button-arrow:hover {
+.current-page {
   background: #F1CDB3;
+  font-family: Georgia;
+  font-size: 2rem;
+  height: 52px;
+  width: 52px;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+  color: #292929;
+}
+
+.button-circle:hover {
+  background: #FDDCC4;
 }
 
 .button-arrow-right img {
@@ -492,7 +519,13 @@ color.
 }
 
 .button-arrow-right:hover {
-  background: #F1CDB3;
+  background: #FDDCC4;
+}
+
+.disabled {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  pointer-events: none;
 }
 
 .wrapper {
@@ -500,21 +533,18 @@ color.
   margin: auto;
 }
 
-.startScreen {
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-  color: #FFFFFF;
-}
-
-.background-cell {
-  background-image: url("../../../assets/images/noise_transparent_final_2.png");
-  padding: 55px 0 0 0;
-}
-
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 60px 0;
+}
+
+.header-main-wrapper {
+  padding: 60px 0 60px 0;
+}
+
+.header-pets-wrapper {
+  padding: 30px 0 30px 0;
 }
 
 .startScreenMain {
@@ -555,26 +585,41 @@ color.
   line-height: 2.4rem;
 }
 
-.navigation__link a {
+.navigation-main {
   color: #CDCDCD;
   text-decoration: none;
 }
 
-.active a {
+.navigation-pets {
+  color: #545454;
+  text-decoration: none;
+}
+
+.active-main {
   color: #FFFFFF;
   border-bottom: 3px solid #F1CDB3;
   padding-bottom: 4px;
 }
 
-.navigation__link a:hover {
-  color: #FFFFFF;
+.active-pets {
+  color: #292929;
+  border-bottom: 3px solid #F1CDB3;
+  padding-bottom: 4px;
+}
+
+.navigation-main:hover {
+  color: #FAFAFA;
+  transition: all 0.3s;
+}
+
+.navigation-pets:hover {
+  color: #292929;
   transition: all 0.3s;
 }
 
 .navigation__link:first-child {
   margin-left: 0px;
   border-bottom: 0px;
-  border-bottom: #F1CDB3 solid 3px;
 }
 
 .donation {
@@ -600,10 +645,14 @@ color.
   padding: 10px 15px 10px 15px;
   border-radius: 9px;
   color: color-dark-l;
+}
+
+.creditCard:hover {
+  background-color: #FDDCC4;
   cursor: pointer;
 }
 
-creditCard a {
+.creditCard a {
   text-decoration: none;
 }
 
@@ -673,10 +722,6 @@ creditCard a {
 }
 
 .pets-card-title {
-  font-family: Georgia;
-  letter-spacing: 0.06em;
-  font-size: 20px;
-  line-height: 23px;
   text-align: center;
   color: #545454;
   margin: 22px 0 30px 0;
@@ -719,6 +764,10 @@ creditCard a {
   margin: 22px 0 55px 0;
 }
 
+.about {
+  background: #FFFFFF;
+}
+
 .about__wrapper {
   display: flex;
   padding: 80px 175px;
@@ -744,14 +793,6 @@ creditCard a {
   color: #545454;
   width: 370px;
   height: 90px;
-}
-
-.footer {
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-}
-
-.background-footer-cell {
-  background-image: url("../../../assets/images/noise_transparent_final_2.png");
 }
 
 .layout-3-column {
@@ -789,8 +830,21 @@ creditCard a {
 }
 
 .footer-puppy {
-  align-self: flex-end;
-  border: none;
+  vertical-align: bottom;
+}
+
+.pets-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0 60px 0;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.buttons-block {
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
 }
 
 @font-face {

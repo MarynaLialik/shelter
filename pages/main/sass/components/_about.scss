@@ -1,9 +1,12 @@
+.about {
+    background: $color-light-xl;
+}
+
 .about__wrapper {
     display: flex;
     padding: 80px 175px;
     min-height: 588px;
-  //  background: $color-light-xl;
-  }
+}
 
 .aboutImageDog {
     width: 50%; 

@@ -1,20 +1,3 @@
-.startScreen {
-    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
-    color: $color-light-xl;
-}
-
-.background-cell{
-    background-image: url('../../../assets/images/noise_transparent_final_2.png');
-    padding: 55px 0 0 0;
-}
-
-.header__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0 60px 0;
-}
-
 .startScreenMain {
     display: flex;
 }

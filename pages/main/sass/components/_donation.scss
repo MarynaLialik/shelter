@@ -17,13 +17,17 @@
 
 .creditCard {
   max-width: 355px;
-  background-color: #F1CDB3;
+  background-color: $color-primary;  // #F1CDB3;
   padding: 10px 15px 10px 15px;
   border-radius: 9px;
   color: color-dark-l;
+}
+
+.creditCard:hover {
+  background-color: $color-primary-light;
   cursor: pointer;
 }
-creditCard a {
+.creditCard a {
   text-decoration: none;
 }
 

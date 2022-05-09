@@ -1,10 +1,10 @@
 .logo {
     display: flex;
     flex-direction: column;
+    cursor: pointer; 
 }
 
 .logo-title {   
-
     font-family: Georgia;
     font-size: 3.2rem;
     font-weight: 400;
@@ -12,31 +12,33 @@
     letter-spacing: 0.06em;
     padding-bottom: 10px;
     margin: 0;
-    cursor: pointer;
     color: $color-primary;
-    text-decoration: none;
- //color: $color-dark-s;
-    
-}
-.logo-title a{
-    text-decoration: none;
-    color: $color-primary;
+    text-decoration: none;   
 }
 
 .logo-subtitle {
     font-size: 1.3rem;
-   // font-weight: 400;
     line-height: 1.5rem;
     letter-spacing: 0.1em;
     text-align: center;
 }
 
-.logo-subtitle a{
+.logo-title-main {
     text-decoration: none;
-    color: #fff;
+    color: $color-primary;
 }
 
-.make-friends {
+.logo-subtitle-main {
+    text-decoration: none;
+    color: $color-light-xl;
+}
+
+.logo-title-pets {
+    text-decoration: none;
+    color: $color-dark-l;
+}
+
+.logo-subtitle-pets {
     text-decoration: none;
     color: $color-dark-3xl;
 }
