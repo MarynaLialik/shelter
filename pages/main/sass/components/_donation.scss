@@ -2,17 +2,36 @@
     background: $color-light-l;
   }
   
-.donation .wrapper {
+.donation__wrapper {
   display: flex;
   padding: 80px 142px 93px;
+  @include media-laptop {
+    padding: 43px 0;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    gap: 43px;
+  }  
 }
 
-.donationDog {
+.donationDog img {
   padding: 11px 30px 10px 0;
+  @include media-laptop {
+    max-width: 505px;
+  } 
+  @include media-tablet{
+    width: 100%;
+    padding: 0;
+  }
+  @include media-mobile {
+    max-width: 260px;
+    
+  } 
 }
   
 .donationContent {
   color: $color-dark-l;
+  max-width: 380px;
+ 
 }
 
 .creditCard {
@@ -52,9 +71,11 @@
   font-style: italic;
   font-size: 12px;
   line-height: 18px;  /* or 150% */
-
   margin-top: 20px;
 //display: flex;
-//align-items: center;
+//align-items: center;  
+  @include media-laptop {
+    text-align: justify;
+  } 
 
 }
