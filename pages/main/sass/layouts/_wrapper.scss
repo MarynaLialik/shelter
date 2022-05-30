@@ -4,6 +4,9 @@
     @include media-laptop {
         padding: 30px 30px 0;
     }
+    @include media-mobile {
+        padding: 30px 10px 0;
+    }
 }
 
 .header__wrapper {
@@ -13,23 +16,12 @@
 }
 
 .header-main-wrapper {
-    padding: 60px 0 60px 0;    
+    padding: 60px 0;    
 
     @include media-laptop {
-        padding: 30px;
+       padding: 0;
     }
 
-    @include media-tablet {
-        padding: 30px;
-    }
-
-    @include media-mobile {
-        padding: 10px 30px;
-    }
-
-    @include media-mobilesmall {
-        padding: 10px 30px;
-    }
 }
 
 .header-pets-wrapper {

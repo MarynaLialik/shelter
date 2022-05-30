@@ -2,7 +2,7 @@
     display: flex;
     @include media-laptop {
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
     }  
 }
 
@@ -13,8 +13,6 @@
 
     @include media-laptop {
         margin: 30px 0 100px;
-        max-width: 460px;
-        align-items: center;
     }
 
     @include media-mobile {
@@ -25,11 +23,23 @@
 .heading {
     color: $color-light-xl;
     padding: 0 100px 42px 0;
+    @include media-laptop {
+        padding: 0;
+        max-width: 400px;
+    }
+    @include media-mobile {
+        padding: 0;
+        max-width: 200;
+    }
 }
 
 .subheading {
     color: $color-dark-s;
     padding-bottom: 42px;
+    @include media-laptop {
+        max-width: 460px;
+        padding: 42px 0;
+    }
 }
 
 .make-friends {
@@ -42,15 +52,21 @@
     
     @include media-laptop {
         align-self: flex-end;
-        margin: auto 0 0 auto;
+       // margin: auto 0 0 auto;
     }
 
     @include media-laptop {
-        max-width: 569px;
+       // max-width: 698px;
+       max-width: 569px;
         width: 100%;
     }
 
     @include media-tablet {
-       width: 260px;
+       max-width: 569px;
+       width: 100%;
     }
+
+    @include media-mobile {
+        max-width: 260px; 
+     }
 }

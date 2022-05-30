@@ -8,7 +8,8 @@
   @include media-laptop {
     padding: 43px 0;
     flex-flow: column-reverse wrap;
-    justify-content: center;
+    //justify-content: center;
+    align-items: center;
     gap: 43px;
   }  
 }
