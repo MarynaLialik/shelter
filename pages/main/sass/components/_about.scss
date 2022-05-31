@@ -4,7 +4,7 @@
 
 .about__wrapper {
     display: flex;
-    padding: 80px 175px;
+    padding: 30px 175px;
     min-height: 588px;
     @include media-laptop {
         padding: 80px 20px 100px;
@@ -48,6 +48,9 @@
     flex-direction: column;
     padding: 14px 0;  
     gap: 25px;
+    @include media-laptop {
+        padding: 0;
+    }
 }
 
 .aboutShelterHeading {

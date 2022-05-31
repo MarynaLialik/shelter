@@ -2,10 +2,10 @@
     max-width: $content-width;   
     margin: auto;     
     @include media-laptop {
-        padding: 30px 30px 0;
+        padding: 0px 30px 0;
     }
     @include media-mobile {
-        padding: 30px 10px 0;
+        padding: 0px 10px 0;
     }
 }
 
@@ -19,11 +19,14 @@
     padding: 60px 0;    
 
     @include media-laptop {
-       padding: 0;
+       padding: 30px 0;
     }
 
 }
 
 .header-pets-wrapper {
     padding: 30px 0 30px 0;
+    @include media-laptop {
+    //    padding: 0 0 30px;
+     }
 }

@@ -553,7 +553,7 @@ a {
   pointer-events: none;
 }
 
-.burger__line, .burger:after, .burger:before {
+.burger__line_pets, .burger__line, .burger:after, .burger:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -588,18 +588,22 @@ a {
   top: calc(50% - 1px);
 }
 
+.burger__line_pets {
+  background-color: white;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
 }
 @media (max-width: 1200px) {
   .wrapper {
-    padding: 30px 30px 0;
+    padding: 0px 30px 0;
   }
 }
 @media (max-width: 374.9px) {
   .wrapper {
-    padding: 30px 10px 0;
+    padding: 0px 10px 0;
   }
 }
 
@@ -614,14 +618,13 @@ a {
 }
 @media (max-width: 1200px) {
   .header-main-wrapper {
-    padding: 0;
+    padding: 30px 0;
   }
 }
 
 .header-pets-wrapper {
   padding: 30px 0 30px 0;
 }
-
 .startScreenMain {
   display: flex;
 }
@@ -859,7 +862,7 @@ a {
 }
 @media (max-width: 767.9px) {
   .pets {
-    padding: 42px 0px;
+    padding: 30px 0px;
   }
 }
 
@@ -1003,7 +1006,7 @@ a {
 
 .about__wrapper {
   display: flex;
-  padding: 80px 175px;
+  padding: 30px 175px;
   min-height: 588px;
 }
 @media (max-width: 1200px) {
@@ -1058,6 +1061,11 @@ a {
   flex-direction: column;
   padding: 14px 0;
   gap: 25px;
+}
+@media (max-width: 1200px) {
+  .aboutShelterContent {
+    padding: 0;
+  }
 }
 
 .aboutShelterHeading {
@@ -1123,7 +1131,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 60px 0 60px 0;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 40px;
   row-gap: 30px;
 }
 
@@ -1133,6 +1142,20 @@ a {
   justify-content: center;
 }
 
+.burger__line_pets .burger__line, .burger__line_pets:after, .burger__line_pets:before {
+  background-color: #000;
+}
+
+/*
+burger:before {
+    @extend %burger-line;
+    background: #000;
+}
+
+burger:after {
+    @extend %burger-line;
+    background: #000;
+}  */
 @font-face {
   font-family: "Georgia";
   font-style: normal;
