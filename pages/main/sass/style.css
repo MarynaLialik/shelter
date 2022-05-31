@@ -395,6 +395,15 @@ h4 {
   letter-spacing: 0.06em;
   margin: 0;
 }
+@media (max-width: 767.9px) {
+  h4 {
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin: 0px;
+  }
+}
 
 h5 {
   font-family: Georgia, Helvetica, sans-serif;
@@ -848,6 +857,11 @@ a {
   background: #F6F6F6;
   padding: 80px 0px 100px;
 }
+@media (max-width: 767.9px) {
+  .pets {
+    padding: 42px 0px;
+  }
+}
 
 .petsSlider {
   padding: 60px 0;
@@ -856,14 +870,17 @@ a {
 }
 @media (max-width: 767.9px) {
   .petsSlider {
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 42px 0;
   }
 }
 
 @media (max-width: 767.9px) {
   .button-arrow-left {
     order: 3;
+    margin-top: 20px;
+    margin-right: 42px;
   }
 }
 
@@ -875,12 +892,9 @@ a {
 }
 @media (max-width: 767.9px) {
   .petsInternal {
-    justify-content: space-evenly;
-  }
-}
-@media (max-width: 767.9px) {
-  .petsInternal {
     order: 1;
+    width: 100%;
+    justify-content: space-evenly;
   }
 }
 
@@ -898,12 +912,12 @@ a {
 
 .button-arrow-right {
   order: 3;
+  margin-top: 20px;
 }
 
 .petsHeading {
   color: #545454;
   text-align: center;
-  font-size: 35px;
 }
 
 .card {
@@ -942,6 +956,16 @@ a {
   background: #FFFFFF;
   padding: 80px 0 45px 0;
 }
+@media (max-width: 767.9px) {
+  .help {
+    padding: 50px 0 45px 0;
+  }
+}
+@media (max-width: 374.9px) {
+  .help {
+    padding: 0px 0 0px 0;
+  }
+}
 
 .helpHeading {
   text-align: center;
@@ -952,12 +976,20 @@ a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 60px;
+  padding-top: 60px;
   text-align: center;
+  column-gap: 120px;
+}
+@media (max-width: 374.9px) {
+  .helpItem {
+    column-gap: 70px;
+  }
 }
 
-.helpItemIcon {
-  margin: 0 60px 0 60px;
+@media (max-width: 767.9px) {
+  .helpItemIcon img {
+    width: 50px;
+  }
 }
 
 .helpItemIconTitle {
@@ -976,10 +1008,10 @@ a {
 }
 @media (max-width: 1200px) {
   .about__wrapper {
-    padding: 80px 20px;
+    padding: 80px 20px 100px;
     flex-direction: column-reverse;
     align-items: center;
-    gap: 48px;
+    gap: 60px;
   }
 }
 @media (max-width: 374.9px) {
@@ -1046,6 +1078,11 @@ a {
   .layout-3-column {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media (max-width: 767.9px) {
+  .layout-3-column {
+    gap: 40px;
   }
 }
 

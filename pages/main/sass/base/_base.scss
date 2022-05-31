@@ -42,6 +42,7 @@ h3 {
     line-height: 32px;
     text-align: center;
     }    
+
 }
 
 
@@ -54,6 +55,14 @@ h4 {
     line-height: 115%; /* identical to box height, or 23px */
     letter-spacing: 0.06em;
     margin: 0;
+    @include media-tablet {
+        //styleName: h5;
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        margin: 0px;
+        } 
 }
 
 h5 {

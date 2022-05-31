@@ -7,10 +7,10 @@
     padding: 80px 175px;
     min-height: 588px;
     @include media-laptop {
-        padding: 80px 20px;
+        padding: 80px 20px 100px;
         flex-direction: column-reverse;
         align-items: center;
-        gap: 48px;
+        gap: 60px;
     }
     @include media-mobile {
         padding: 42px 20px;

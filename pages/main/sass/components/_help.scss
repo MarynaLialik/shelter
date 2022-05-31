@@ -1,6 +1,12 @@
 .help {
     background: $color-light-xl;
     padding: 80px 0 45px 0;
+    @include media-tablet {
+        padding: 50px 0 45px 0;
+    }
+    @include media-mobile {
+        padding: 0px 0 0px 0;
+    }
 
 }
 
@@ -13,13 +19,20 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 60px;
+    padding-top: 60px;
     text-align: center;
+    column-gap: 120px;
+    @include media-mobile {
+        column-gap: 70px;
+       // justify-content:start;
+       // width: 50%;
+     }
 }
 
-.helpItemIcon {
-    margin: 0 60px 0 60px;
-
+.helpItemIcon img {
+    @include media-tablet {
+        width: 50px;
+    }
 }
 
 .helpItemIconTitle {
