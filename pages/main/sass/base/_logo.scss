@@ -1,7 +1,8 @@
 .logo {
     display: flex;
     flex-direction: column;
-    cursor: pointer; 
+    cursor: pointer;   
+    z-index: 2;  
 }
 
 .logo-title {   
